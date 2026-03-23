@@ -125,9 +125,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   transition: color .2s;
 }
 .nav-links a:hover { color: #fff; }
-.nav-cta {
+.nav-links a.nav-cta, .nav-cta {
   background: var(--lime);
-  color: #0a0a0a;
+  color: #0a0a0a !important;
   font-weight: 700;
   font-size: var(--font-sm);
   letter-spacing: -0.01em;
@@ -1243,36 +1243,32 @@ footer {
 <!-- COACHES -->
 <section id="coaches">
   <div class="container">
-    <div class="coaches-header">
-      <span class="section-eye light reveal">The Instructors</span>
-      <h2 class="section-h2 light reveal d1">전문 <mark>강사진</mark>을 소개합니다</h2>
+    <div class="coaches-header" style="text-align: center;">
+      <span class="section-eye light reveal">Head Coach</span>
+      <h2 class="section-h2 light reveal d1">김민준 <mark>트레이너</mark>를 소개합니다</h2>
+      <p class="section-sub light reveal d2" style="margin-top: 16px;">개인의 목표와 체형에 맞춘 최적의 테니스 솔루션을 제공합니다.</p>
     </div>
-    <div class="coaches-grid">
-      <div class="coach-card reveal d1">
-        <img class="coach-img" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=85" alt="수석 코치"/>
-        <div class="coach-overlay">
-          <div class="coach-tag">수석 코치</div>
-          <div class="coach-name">김민준</div>
-          <div class="coach-role">전 국가대표 · 전술 플레이 전문</div>
-          <div class="coach-dots"><span class="coach-dot"></span><span class="coach-dot"></span><span class="coach-dot"></span></div>
-        </div>
+    <div class="reveal d3" style="display: flex; flex-wrap: wrap; gap: 40px; align-items: center; justify-content: center; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: var(--radius-lg); padding: 40px;">
+      <div style="flex: 1; min-width: 280px; max-width: 380px; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg);">
+        <img src="assets/images/coach_profile.png" alt="김민준 트레이너" style="width: 100%; height: auto; display: block;" />
       </div>
-      <div class="coach-card reveal d2">
-        <img class="coach-img" src="https://images.unsplash.com/photo-1594381898411-846e7d193883?w=800&q=85" alt="서브 코치"/>
-        <div class="coach-overlay">
-          <div class="coach-tag">전문 코치</div>
-          <div class="coach-name">이수진</div>
-          <div class="coach-role">서브 & 발리 전문</div>
-          <div class="coach-dots"><span class="coach-dot"></span><span class="coach-dot"></span><span class="coach-dot"></span></div>
-        </div>
-      </div>
-      <div class="coach-card reveal d3">
-        <img class="coach-img" src="https://images.unsplash.com/photo-1554244933-d876deb6b2ff?w=800&q=85" alt="파워 코치"/>
-        <div class="coach-overlay">
-          <div class="coach-tag">전문 코치</div>
-          <div class="coach-name">박재현</div>
-          <div class="coach-role">파워 히팅 전문</div>
-          <div class="coach-dots"><span class="coach-dot"></span><span class="coach-dot"></span><span class="coach-dot"></span></div>
+      <div style="flex: 1; min-width: 280px; color: #fff;">
+        <div style="display: inline-block; background: var(--lime); color: var(--black); font-size: var(--font-xs); font-weight: 700; padding: 4px 12px; border-radius: var(--radius-full); margin-bottom: 16px; letter-spacing: var(--ls-wide); text-transform: uppercase;">수석 코치</div>
+        <h3 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 8px; letter-spacing: var(--ls-tight); word-break: keep-all;">김민준 (Minjun Kim)</h3>
+        <p style="font-size: var(--font-base); color: rgba(255,255,255,0.7); margin-bottom: 32px; line-height: var(--lh-relaxed); word-break: keep-all;">"올바른 기본기가 평생의 테니스를 좌우합니다. 부상 없이 즐겁게, 그리고 확실하게 당신의 한계를 넘어설 수 있도록 지도하겠습니다."</p>
+        
+        <h4 style="font-size: var(--font-sm); font-weight: 700; color: var(--lime); margin-bottom: 16px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px;">주요 경력 및 자격</h4>
+        <ul style="list-style: none; padding: 0; margin-bottom: 32px;">
+          <li style="margin-bottom: 10px; font-size: var(--font-sm); display: flex; align-items: flex-start; gap: 10px;"><span style="color: var(--lime); font-weight: 900;">✓</span> <span style="color: rgba(255,255,255,0.85);">전 테니스 국가대표 상비군 (2015-2018)</span></li>
+          <li style="margin-bottom: 10px; font-size: var(--font-sm); display: flex; align-items: flex-start; gap: 10px;"><span style="color: var(--lime); font-weight: 900;">✓</span> <span style="color: rgba(255,255,255,0.85);">전국 체육대회 테니스 단식 우승 (2017)</span></li>
+          <li style="margin-bottom: 10px; font-size: var(--font-sm); display: flex; align-items: flex-start; gap: 10px;"><span style="color: var(--lime); font-weight: 900;">✓</span> <span style="color: rgba(255,255,255,0.85);">USPTA (미국프로테니스협회) Elite Professional 자격</span></li>
+          <li style="margin-bottom: 10px; font-size: var(--font-sm); display: flex; align-items: flex-start; gap: 10px;"><span style="color: var(--lime); font-weight: 900;">✓</span> <span style="color: rgba(255,255,255,0.85);">KTA (대한테니스협회) 매직테니스 지도자 자격</span></li>
+          <li style="margin-bottom: 10px; font-size: var(--font-sm); display: flex; align-items: flex-start; gap: 10px;"><span style="color: var(--lime); font-weight: 900;">✓</span> <span style="color: rgba(255,255,255,0.85);">현 강남 프리미엄 실내 테니스 클럽 수석 코치 (10년차)</span></li>
+        </ul>
+        
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <a href="#contact" class="btn-primary" style="padding: 14px 28px; font-size: var(--font-sm);">레슨 상담하기</a>
+          <a href="#programs" class="btn-secondary" style="padding: 13px 28px; font-size: var(--font-sm);">프로그램 보기</a>
         </div>
       </div>
     </div>
