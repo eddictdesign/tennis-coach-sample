@@ -485,6 +485,50 @@ section { padding: 100px 0; }
 }
 
 /* ══════════════════════════════════════
+   PROCESS SECTION
+══════════════════════════════════════ */
+#process { background: #fff; }
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.process-step {
+  background: var(--light);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 36px 32px;
+  position: relative;
+  box-shadow: var(--shadow-sm);
+  transition: transform .3s, border-color .3s;
+}
+.process-step:hover {
+  transform: translateY(-4px);
+  border-color: rgba(204,255,0,.4);
+}
+.process-num {
+  width: 44px; height: 44px;
+  background: var(--lime); color: var(--black);
+  font-weight: 900; font-size: 1.25rem;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%; margin-bottom: 24px;
+}
+.process-title {
+  font-size: var(--font-lg); font-weight: 800; color: var(--dark);
+  margin-bottom: 14px; letter-spacing: var(--ls-tight); word-break: keep-all;
+}
+.process-desc {
+  font-size: var(--font-sm); color: var(--muted);
+  line-height: var(--lh-relaxed); word-break: keep-all;
+}
+@media (max-width: 1024px) {
+  .process-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+}
+@media (max-width: 768px) {
+  .process-grid { grid-template-columns: 1fr; }
+}
+
+/* ══════════════════════════════════════
    PROGRAMS SECTION
 ══════════════════════════════════════ */
 #programs { background: var(--light); }
@@ -1217,8 +1261,8 @@ footer {
   <div class="container">
     <div class="reveal">
       <span class="section-eye">Why Choose Us</span>
-      <h2 class="section-h2">왜 <mark>에이스 퍼포먼스</mark>인가요?</h2>
-      <p class="section-sub" style="max-width:480px;">최고의 환경과 검증된 코칭 시스템으로 확실한 실력 향상을 약속합니다.</p>
+      <h2 class="section-h2">왜 <mark>김민준 코치</mark>인가요?</h2>
+      <p class="section-sub" style="max-width:480px;">최고의 환경과 검증된 1:1 맞춤 코칭 시스템으로 확실한 실력 향상을 약속합니다.</p>
     </div>
     <div class="why-grid" style="margin-top:52px;">
       <div class="why-card reveal d1">
@@ -1270,6 +1314,39 @@ footer {
           <a href="#contact" class="btn-primary" style="padding: 14px 28px; font-size: var(--font-sm);">레슨 상담하기</a>
           <a href="#programs" class="btn-secondary" style="padding: 13px 28px; font-size: var(--font-sm);">프로그램 보기</a>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="container">
+    <div style="text-align: center; margin-bottom: 56px;">
+      <span class="section-eye reveal">Curriculum & Process</span>
+      <h2 class="section-h2 reveal d1">레슨 <mark>진행 프로세스</mark></h2>
+      <p class="section-sub reveal d2">체계적인 4단계 커리큘럼으로 확실한 실력 변화를 만들어냅니다.</p>
+    </div>
+    <div class="process-grid">
+      <div class="process-step reveal d1">
+        <div class="process-num">1</div>
+        <h3 class="process-title">사전 인터뷰 & 폼 체크</h3>
+        <p class="process-desc">체형과 운동 성향을 파악하고 비디오 촬영을 통해 현재 스윙의 문제점을 정확히 진단하여 목표를 설정합니다.</p>
+      </div>
+      <div class="process-step reveal d2">
+        <div class="process-num">2</div>
+        <h3 class="process-title">맞춤 커리큘럼 설계</h3>
+        <p class="process-desc">단기 및 장기 목표를 설정하고, 단점을 보완할 수 있는 개인화된 드릴 훈련 플랜과 교정 솔루션을 제공합니다.</p>
+      </div>
+      <div class="process-step reveal d3">
+        <div class="process-num">3</div>
+        <h3 class="process-title">집중 트레이닝 & 교정</h3>
+        <p class="process-desc">볼 머신과 코치의 직접적인 피딩·랠리를 통해 올바른 신체 근육 기억(Muscle Memory)이 형성되도록 반복 훈련합니다.</p>
+      </div>
+      <div class="process-step reveal d4">
+        <div class="process-num">4</div>
+        <h3 class="process-title">실전 랠리 및 모니터링</h3>
+        <p class="process-desc">실제 시합 상황과 같은 전술 시뮬레이션을 연습하고 주기적인 영상 피드백으로 성장 과정을 눈으로 확인합니다.</p>
       </div>
     </div>
   </div>
